@@ -1,0 +1,28 @@
+$radius-item-list: 5px;
+
+.heroes-list {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: .5rem;
+  & > li {
+    border-radius: $radius-item-list;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    a {
+      text-decoration: none;
+      color: #212121;
+      padding: .5rem 0;
+    }
+    .badge {
+      background-color: #78909C;
+      border-radius: $radius-item-list 0 0 $radius-item-list;
+      padding: .5rem .5rem;
+      color: #FAFAFA;
+    }
+  }
+  
+}
